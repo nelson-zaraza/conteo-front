@@ -5,7 +5,7 @@ const PORT = 3001;
 
 // Middleware
 app.use(cors({
-  origin: "http://localhost:3000", // O tu frontend
+  origin: "https://conteo-back.vercel.app", // O tu frontend
   credentials: true
 }));
 app.use(express.json());
@@ -23,5 +23,5 @@ app.get('/health', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`📧 Servicio de Emails en http://localhost:${PORT}`);
+  console.log(`📧 Servicio de Emails en https://conteo-back.vercel.app:${PORT}`);
 });
